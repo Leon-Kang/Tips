@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  ForKama
+//
+//  Created by 康梁 on 16/8/16.
+//  Copyright © 2016年 LeonKang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <Realm/Realm.h>
+
+#ifdef __OBJC__
+
+#import "UIView+Additions.h"
+#import <UIImage+Additions/UIImage+Additions.h>
+#import <UIColor+Additions/UIColor+Additions.h>
+#import <DateTools/DateTools.h>
+
+#endif
+
+
+#import "KLProductManager.h"
+
+#endif /* PrefixHeader_pch */

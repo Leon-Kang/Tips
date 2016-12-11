@@ -1,0 +1,38 @@
+##################################################################
+###                          Podfile                           ###
+##################################################################
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.0"
+
+project 'ForKama.xcodeproj'
+
+def common_pods
+    #Realm
+	pod 'Realm'
+    pod 'Realm/Headers'
+    
+    #Tools
+	pod 'DateTools'
+    
+	pod 'UIImage+Additions'
+	pod 'UIColor+Additions'
+
+	# Fabric
+	pod 'Fabric'
+	pod 'Crashlytics'
+
+	pod 'ReactiveCocoa', '2.5'
+end
+
+def testing_pods
+  pod 'Kiwi'
+end
+
+
+target :ForKama do 
+    common_pods
+end
+
+target :ForKamaTests do 
+    testing_pods
+end

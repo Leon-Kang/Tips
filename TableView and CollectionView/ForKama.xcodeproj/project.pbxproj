@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08BC0024154B673CA50E705E /* libPods-ForKama.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFA181E262A34D3EB9829F0 /* libPods-ForKama.a */; };
+		6B1FE3591DB3CA470005F579 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1FE3581DB3CA470005F579 /* NotificationCenter.framework */; };
+		6B1FE35D1DB3CA470005F579 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1FE35C1DB3CA470005F579 /* TodayViewController.m */; };
+		6B1FE3601DB3CA470005F579 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1FE35E1DB3CA470005F579 /* MainInterface.storyboard */; };
+		6B1FE3641DB3CA470005F579 /* showInfo.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6B1FE3571DB3CA470005F579 /* showInfo.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6B3163711D63179600774BC6 /* KLProductManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3163701D63179600774BC6 /* KLProductManager.m */; };
+		6B3163751D63194E00774BC6 /* KLProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3163741D63194E00774BC6 /* KLProduct.m */; };
+		6B3163781D631F6200774BC6 /* KLProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3163771D631F6200774BC6 /* KLProductCollectionViewCell.m */; };
+		6B3C31131DA60ECE00E30762 /* KLProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3C31121DA60ECE00E30762 /* KLProductTableViewCell.m */; };
+		6B3F87DA1DA767680010F2C7 /* KLProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3F87D91DA767680010F2C7 /* KLProductCollectionViewCell.xib */; };
+		6B72EA411DA39C1500ADA424 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B72EA401DA39C1500ADA424 /* libc++.tbd */; };
+		6B8766C01DB2685F00C12A90 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766BB1DB2685F00C12A90 /* UIView+Additions.m */; };
+		6B8766C11DB2685F00C12A90 /* UIView+FirstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766BD1DB2685F00C12A90 /* UIView+FirstResponder.m */; };
+		6B8766C21DB2685F00C12A90 /* UIView+IWSubviewsOfKind.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8766BF1DB2685F00C12A90 /* UIView+IWSubviewsOfKind.m */; };
+		6B88C30D1D62FC2C00C91F55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B88C30C1D62FC2C00C91F55 /* main.m */; };
+		6B88C3101D62FC2C00C91F55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B88C30F1D62FC2C00C91F55 /* AppDelegate.m */; };
+		6B88C3161D62FC2C00C91F55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B88C3141D62FC2C00C91F55 /* Main.storyboard */; };
+		6B88C3191D62FC2C00C91F55 /* ForKama.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B88C3171D62FC2C00C91F55 /* ForKama.xcdatamodeld */; };
+		6B88C31B1D62FC2C00C91F55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B88C31A1D62FC2C00C91F55 /* Assets.xcassets */; };
+		6B88C31E1D62FC2C00C91F55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B88C31C1D62FC2C00C91F55 /* LaunchScreen.storyboard */; };
+		6B88C3291D62FC2C00C91F55 /* ForKamaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B88C3281D62FC2C00C91F55 /* ForKamaTests.m */; };
+		6B88C3341D62FC2C00C91F55 /* ForKamaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B88C3331D62FC2C00C91F55 /* ForKamaUITests.m */; };
+		6B88C3431D62FD9900C91F55 /* KLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B88C3421D62FD9900C91F55 /* KLHomeViewController.m */; };
+		6B88C3481D6300B800C91F55 /* KLTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B88C3471D6300B800C91F55 /* KLTabbarController.m */; };
+		6B88C34B1D63045700C91F55 /* KLSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B88C34A1D63045700C91F55 /* KLSettingViewController.m */; };
+		9F5BA4D17AB9A6E3EDB49B72 /* libPods-ForKamaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963C515AEF19ADE826948AAF /* libPods-ForKamaTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B1FE3621DB3CA470005F579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B88C3001D62FC2C00C91F55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B1FE3561DB3CA470005F579;
+			remoteInfo = showInfo;
+		};
+		6B88C3251D62FC2C00C91F55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B88C3001D62FC2C00C91F55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B88C3071D62FC2C00C91F55;
+			remoteInfo = ForKama;
+		};
+		6B88C3301D62FC2C00C91F55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B88C3001D62FC2C00C91F55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B88C3071D62FC2C00C91F55;
+			remoteInfo = ForKama;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B1FE3681DB3CA480005F579 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6B1FE3641DB3CA470005F579 /* showInfo.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16DEEC879F0B2857041F7175 /* Pods-ForKamaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForKamaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForKamaTests/Pods-ForKamaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1DFA181E262A34D3EB9829F0 /* libPods-ForKama.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForKama.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45691387B329F6924D88E1DB /* Pods-ForKama.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForKama.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForKama/Pods-ForKama.release.xcconfig"; sourceTree = "<group>"; };
+		51E09FEF78C2F621C4D481A5 /* Pods-ForKama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForKama.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForKama/Pods-ForKama.debug.xcconfig"; sourceTree = "<group>"; };
+		6B1FE3571DB3CA470005F579 /* showInfo.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = showInfo.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1FE3581DB3CA470005F579 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6B1FE35B1DB3CA470005F579 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		6B1FE35C1DB3CA470005F579 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		6B1FE35F1DB3CA470005F579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6B1FE3611DB3CA470005F579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1FE3691DB3CA7E0005F579 /* ForKama.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ForKama.entitlements; sourceTree = "<group>"; };
+		6B1FE36A1DB3CB3D0005F579 /* showInfo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = showInfo.entitlements; sourceTree = "<group>"; };
+		6B31636F1D63179600774BC6 /* KLProductManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProductManager.h; sourceTree = "<group>"; };
+		6B3163701D63179600774BC6 /* KLProductManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProductManager.m; sourceTree = "<group>"; };
+		6B3163731D63194E00774BC6 /* KLProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProduct.h; sourceTree = "<group>"; };
+		6B3163741D63194E00774BC6 /* KLProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProduct.m; sourceTree = "<group>"; };
+		6B3163761D631F6200774BC6 /* KLProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProductCollectionViewCell.h; sourceTree = "<group>"; };
+		6B3163771D631F6200774BC6 /* KLProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProductCollectionViewCell.m; sourceTree = "<group>"; };
+		6B3C31111DA60ECE00E30762 /* KLProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProductTableViewCell.h; sourceTree = "<group>"; };
+		6B3C31121DA60ECE00E30762 /* KLProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProductTableViewCell.m; sourceTree = "<group>"; };
+		6B3F87D91DA767680010F2C7 /* KLProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		6B72EA401DA39C1500ADA424 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		6B8766BA1DB2685F00C12A90 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		6B8766BB1DB2685F00C12A90 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		6B8766BC1DB2685F00C12A90 /* UIView+FirstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FirstResponder.h"; sourceTree = "<group>"; };
+		6B8766BD1DB2685F00C12A90 /* UIView+FirstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FirstResponder.m"; sourceTree = "<group>"; };
+		6B8766BE1DB2685F00C12A90 /* UIView+IWSubviewsOfKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IWSubviewsOfKind.h"; sourceTree = "<group>"; };
+		6B8766BF1DB2685F00C12A90 /* UIView+IWSubviewsOfKind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IWSubviewsOfKind.m"; sourceTree = "<group>"; };
+		6B88C3081D62FC2C00C91F55 /* ForKama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForKama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B88C30C1D62FC2C00C91F55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B88C30E1D62FC2C00C91F55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B88C30F1D62FC2C00C91F55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B88C3151D62FC2C00C91F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B88C3181D62FC2C00C91F55 /* ForKama.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForKama.xcdatamodel; sourceTree = "<group>"; };
+		6B88C31A1D62FC2C00C91F55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B88C31D1D62FC2C00C91F55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B88C31F1D62FC2C00C91F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B88C3241D62FC2C00C91F55 /* ForKamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForKamaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B88C3281D62FC2C00C91F55 /* ForKamaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForKamaTests.m; sourceTree = "<group>"; };
+		6B88C32A1D62FC2C00C91F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B88C32F1D62FC2C00C91F55 /* ForKamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForKamaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B88C3331D62FC2C00C91F55 /* ForKamaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForKamaUITests.m; sourceTree = "<group>"; };
+		6B88C3351D62FC2C00C91F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B88C3411D62FD9900C91F55 /* KLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLHomeViewController.h; sourceTree = "<group>"; };
+		6B88C3421D62FD9900C91F55 /* KLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLHomeViewController.m; sourceTree = "<group>"; };
+		6B88C3451D62FE8000C91F55 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6B88C3461D6300B800C91F55 /* KLTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTabbarController.h; sourceTree = "<group>"; };
+		6B88C3471D6300B800C91F55 /* KLTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTabbarController.m; sourceTree = "<group>"; };
+		6B88C3491D63045700C91F55 /* KLSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSettingViewController.h; sourceTree = "<group>"; };
+		6B88C34A1D63045700C91F55 /* KLSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSettingViewController.m; sourceTree = "<group>"; };
+		6DD40AD0BB66B0A1A6E7D6A0 /* Pods-ForKamaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForKamaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForKamaTests/Pods-ForKamaTests.release.xcconfig"; sourceTree = "<group>"; };
+		963C515AEF19ADE826948AAF /* libPods-ForKamaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ForKamaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B1FE3541DB3CA470005F579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1FE3591DB3CA470005F579 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B88C3051D62FC2C00C91F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B72EA411DA39C1500ADA424 /* libc++.tbd in Frameworks */,
+				08BC0024154B673CA50E705E /* libPods-ForKama.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B88C3211D62FC2C00C91F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5BA4D17AB9A6E3EDB49B72 /* libPods-ForKamaTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B88C32C1D62FC2C00C91F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B1FE35A1DB3CA470005F579 /* showInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6B1FE36A1DB3CB3D0005F579 /* showInfo.entitlements */,
+				6B1FE35B1DB3CA470005F579 /* TodayViewController.h */,
+				6B1FE35C1DB3CA470005F579 /* TodayViewController.m */,
+				6B1FE35E1DB3CA470005F579 /* MainInterface.storyboard */,
+				6B1FE3611DB3CA470005F579 /* Info.plist */,
+			);
+			path = showInfo;
+			sourceTree = "<group>";
+		};
+		6B3163721D6317B500774BC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B31636F1D63179600774BC6 /* KLProductManager.h */,
+				6B3163701D63179600774BC6 /* KLProductManager.m */,
+				6B3163731D63194E00774BC6 /* KLProduct.h */,
+				6B3163741D63194E00774BC6 /* KLProduct.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6B3163791D631F6500774BC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B3163761D631F6200774BC6 /* KLProductCollectionViewCell.h */,
+				6B3163771D631F6200774BC6 /* KLProductCollectionViewCell.m */,
+				6B3F87D91DA767680010F2C7 /* KLProductCollectionViewCell.xib */,
+				6B3C31111DA60ECE00E30762 /* KLProductTableViewCell.h */,
+				6B3C31121DA60ECE00E30762 /* KLProductTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6B8766B91DB267C700C12A90 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6B8766BA1DB2685F00C12A90 /* UIView+Additions.h */,
+				6B8766BB1DB2685F00C12A90 /* UIView+Additions.m */,
+				6B8766BC1DB2685F00C12A90 /* UIView+FirstResponder.h */,
+				6B8766BD1DB2685F00C12A90 /* UIView+FirstResponder.m */,
+				6B8766BE1DB2685F00C12A90 /* UIView+IWSubviewsOfKind.h */,
+				6B8766BF1DB2685F00C12A90 /* UIView+IWSubviewsOfKind.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		6B88C2FF1D62FC2C00C91F55 = {
+			isa = PBXGroup;
+			children = (
+				6B88C30A1D62FC2C00C91F55 /* ForKama */,
+				6B88C3271D62FC2C00C91F55 /* ForKamaTests */,
+				6B88C3321D62FC2C00C91F55 /* ForKamaUITests */,
+				6B1FE35A1DB3CA470005F579 /* showInfo */,
+				6B88C3091D62FC2C00C91F55 /* Products */,
+				F3F7AF78055F7862ECF6E402 /* Pods */,
+				859F3785C876101343EBC993 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6B88C3091D62FC2C00C91F55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B88C3081D62FC2C00C91F55 /* ForKama.app */,
+				6B88C3241D62FC2C00C91F55 /* ForKamaTests.xctest */,
+				6B88C32F1D62FC2C00C91F55 /* ForKamaUITests.xctest */,
+				6B1FE3571DB3CA470005F579 /* showInfo.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B88C30A1D62FC2C00C91F55 /* ForKama */ = {
+			isa = PBXGroup;
+			children = (
+				6B1FE3691DB3CA7E0005F579 /* ForKama.entitlements */,
+				6B88C30E1D62FC2C00C91F55 /* AppDelegate.h */,
+				6B88C30F1D62FC2C00C91F55 /* AppDelegate.m */,
+				6B8766B91DB267C700C12A90 /* Helper */,
+				6B3163721D6317B500774BC6 /* Model */,
+				6B3163791D631F6500774BC6 /* View */,
+				6B88C3441D62FDA000C91F55 /* ViewController */,
+				6B88C30B1D62FC2C00C91F55 /* Supporting Files */,
+			);
+			path = ForKama;
+			sourceTree = "<group>";
+		};
+		6B88C30B1D62FC2C00C91F55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B88C30C1D62FC2C00C91F55 /* main.m */,
+				6B88C3141D62FC2C00C91F55 /* Main.storyboard */,
+				6B88C31A1D62FC2C00C91F55 /* Assets.xcassets */,
+				6B88C31C1D62FC2C00C91F55 /* LaunchScreen.storyboard */,
+				6B88C31F1D62FC2C00C91F55 /* Info.plist */,
+				6B88C3171D62FC2C00C91F55 /* ForKama.xcdatamodeld */,
+				6B88C3451D62FE8000C91F55 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B88C3271D62FC2C00C91F55 /* ForKamaTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B88C3281D62FC2C00C91F55 /* ForKamaTests.m */,
+				6B88C32A1D62FC2C00C91F55 /* Info.plist */,
+			);
+			path = ForKamaTests;
+			sourceTree = "<group>";
+		};
+		6B88C3321D62FC2C00C91F55 /* ForKamaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B88C3331D62FC2C00C91F55 /* ForKamaUITests.m */,
+				6B88C3351D62FC2C00C91F55 /* Info.plist */,
+			);
+			path = ForKamaUITests;
+			sourceTree = "<group>";
+		};
+		6B88C3441D62FDA000C91F55 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B88C3411D62FD9900C91F55 /* KLHomeViewController.h */,
+				6B88C3421D62FD9900C91F55 /* KLHomeViewController.m */,
+				6B88C3491D63045700C91F55 /* KLSettingViewController.h */,
+				6B88C34A1D63045700C91F55 /* KLSettingViewController.m */,
+				6B88C3461D6300B800C91F55 /* KLTabbarController.h */,
+				6B88C3471D6300B800C91F55 /* KLTabbarController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		859F3785C876101343EBC993 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B72EA401DA39C1500ADA424 /* libc++.tbd */,
+				963C515AEF19ADE826948AAF /* libPods-ForKamaTests.a */,
+				1DFA181E262A34D3EB9829F0 /* libPods-ForKama.a */,
+				6B1FE3581DB3CA470005F579 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3F7AF78055F7862ECF6E402 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16DEEC879F0B2857041F7175 /* Pods-ForKamaTests.debug.xcconfig */,
+				6DD40AD0BB66B0A1A6E7D6A0 /* Pods-ForKamaTests.release.xcconfig */,
+				51E09FEF78C2F621C4D481A5 /* Pods-ForKama.debug.xcconfig */,
+				45691387B329F6924D88E1DB /* Pods-ForKama.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B1FE3561DB3CA470005F579 /* showInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1FE3671DB3CA480005F579 /* Build configuration list for PBXNativeTarget "showInfo" */;
+			buildPhases = (
+				6B1FE3531DB3CA470005F579 /* Sources */,
+				6B1FE3541DB3CA470005F579 /* Frameworks */,
+				6B1FE3551DB3CA470005F579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = showInfo;
+			productName = showInfo;
+			productReference = 6B1FE3571DB3CA470005F579 /* showInfo.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6B88C3071D62FC2C00C91F55 /* ForKama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B88C3381D62FC2C00C91F55 /* Build configuration list for PBXNativeTarget "ForKama" */;
+			buildPhases = (
+				DF56339E9CCE586A92021F5F /* [CP] Check Pods Manifest.lock */,
+				6B88C3041D62FC2C00C91F55 /* Sources */,
+				6B88C3051D62FC2C00C91F55 /* Frameworks */,
+				6B88C3061D62FC2C00C91F55 /* Resources */,
+				4B8A50C11FE2FA382DA7C93A /* [CP] Embed Pods Frameworks */,
+				0DF203F9ADE79F8F472F87C0 /* [CP] Copy Pods Resources */,
+				6B1FE3681DB3CA480005F579 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B1FE3631DB3CA470005F579 /* PBXTargetDependency */,
+			);
+			name = ForKama;
+			productName = ForKama;
+			productReference = 6B88C3081D62FC2C00C91F55 /* ForKama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B88C3231D62FC2C00C91F55 /* ForKamaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B88C33B1D62FC2C00C91F55 /* Build configuration list for PBXNativeTarget "ForKamaTests" */;
+			buildPhases = (
+				8FC7070B60A0B3AD6B300F0E /* [CP] Check Pods Manifest.lock */,
+				6B88C3201D62FC2C00C91F55 /* Sources */,
+				6B88C3211D62FC2C00C91F55 /* Frameworks */,
+				6B88C3221D62FC2C00C91F55 /* Resources */,
+				CB15681F064170E302FFA1D6 /* [CP] Embed Pods Frameworks */,
+				39190CEC828CA789D6C6BFA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B88C3261D62FC2C00C91F55 /* PBXTargetDependency */,
+			);
+			name = ForKamaTests;
+			productName = ForKamaTests;
+			productReference = 6B88C3241D62FC2C00C91F55 /* ForKamaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6B88C32E1D62FC2C00C91F55 /* ForKamaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B88C33E1D62FC2C00C91F55 /* Build configuration list for PBXNativeTarget "ForKamaUITests" */;
+			buildPhases = (
+				6B88C32B1D62FC2C00C91F55 /* Sources */,
+				6B88C32C1D62FC2C00C91F55 /* Frameworks */,
+				6B88C32D1D62FC2C00C91F55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B88C3311D62FC2C00C91F55 /* PBXTargetDependency */,
+			);
+			name = ForKamaUITests;
+			productName = ForKamaUITests;
+			productReference = 6B88C32F1D62FC2C00C91F55 /* ForKamaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B88C3001D62FC2C00C91F55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = LeonKang;
+				TargetAttributes = {
+					6B1FE3561DB3CA470005F579 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9MTLC2PZJ9;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6B88C3071D62FC2C00C91F55 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9MTLC2PZJ9;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6B88C3231D62FC2C00C91F55 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9MTLC2PZJ9;
+						TestTargetID = 6B88C3071D62FC2C00C91F55;
+					};
+					6B88C32E1D62FC2C00C91F55 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9MTLC2PZJ9;
+						TestTargetID = 6B88C3071D62FC2C00C91F55;
+					};
+				};
+			};
+			buildConfigurationList = 6B88C3031D62FC2C00C91F55 /* Build configuration list for PBXProject "ForKama" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B88C2FF1D62FC2C00C91F55;
+			productRefGroup = 6B88C3091D62FC2C00C91F55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B88C3071D62FC2C00C91F55 /* ForKama */,
+				6B1FE3561DB3CA470005F579 /* showInfo */,
+				6B88C3231D62FC2C00C91F55 /* ForKamaTests */,
+				6B88C32E1D62FC2C00C91F55 /* ForKamaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B1FE3551DB3CA470005F579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1FE3601DB3CA470005F579 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B88C3061D62FC2C00C91F55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B88C31E1D62FC2C00C91F55 /* LaunchScreen.storyboard in Resources */,
+				6B88C31B1D62FC2C00C91F55 /* Assets.xcassets in Resources */,
+				6B88C3161D62FC2C00C91F55 /* Main.storyboard in Resources */,
+				6B3F87DA1DA767680010F2C7 /* KLProductCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B88C3221D62FC2C00C91F55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B88C32D1D62FC2C00C91F55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DF203F9ADE79F8F472F87C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForKama/Pods-ForKama-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39190CEC828CA789D6C6BFA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForKamaTests/Pods-ForKamaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B8A50C11FE2FA382DA7C93A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForKama/Pods-ForKama-frameworks.sh\"\n";
+		};
+		8FC7070B60A0B3AD6B300F0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB15681F064170E302FFA1D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForKamaTests/Pods-ForKamaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF56339E9CCE586A92021F5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B1FE3531DB3CA470005F579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1FE35D1DB3CA470005F579 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B88C3041D62FC2C00C91F55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8766C11DB2685F00C12A90 /* UIView+FirstResponder.m in Sources */,
+				6B8766C21DB2685F00C12A90 /* UIView+IWSubviewsOfKind.m in Sources */,
+				6B3C31131DA60ECE00E30762 /* KLProductTableViewCell.m in Sources */,
+				6B88C3431D62FD9900C91F55 /* KLHomeViewController.m in Sources */,
+				6B88C3191D62FC2C00C91F55 /* ForKama.xcdatamodeld in Sources */,
+				6B3163711D63179600774BC6 /* KLProductManager.m in Sources */,
+				6B3163781D631F6200774BC6 /* KLProductCollectionViewCell.m in Sources */,
+				6B88C34B1D63045700C91F55 /* KLSettingViewController.m in Sources */,
+				6B88C3101D62FC2C00C91F55 /* AppDelegate.m in Sources */,
+				6B88C3481D6300B800C91F55 /* KLTabbarController.m in Sources */,
+				6B3163751D63194E00774BC6 /* KLProduct.m in Sources */,
+				6B88C30D1D62FC2C00C91F55 /* main.m in Sources */,
+				6B8766C01DB2685F00C12A90 /* UIView+Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B88C3201D62FC2C00C91F55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B88C3291D62FC2C00C91F55 /* ForKamaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B88C32B1D62FC2C00C91F55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B88C3341D62FC2C00C91F55 /* ForKamaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B1FE3631DB3CA470005F579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B1FE3561DB3CA470005F579 /* showInfo */;
+			targetProxy = 6B1FE3621DB3CA470005F579 /* PBXContainerItemProxy */;
+		};
+		6B88C3261D62FC2C00C91F55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B88C3071D62FC2C00C91F55 /* ForKama */;
+			targetProxy = 6B88C3251D62FC2C00C91F55 /* PBXContainerItemProxy */;
+		};
+		6B88C3311D62FC2C00C91F55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B88C3071D62FC2C00C91F55 /* ForKama */;
+			targetProxy = 6B88C3301D62FC2C00C91F55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B1FE35E1DB3CA470005F579 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1FE35F1DB3CA470005F579 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		6B88C3141D62FC2C00C91F55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B88C3151D62FC2C00C91F55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B88C31C1D62FC2C00C91F55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B88C31D1D62FC2C00C91F55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B1FE3651DB3CA470005F579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = showInfo/showInfo.entitlements;
+				DEVELOPMENT_TEAM = 9MTLC2PZJ9;
+				INFOPLIST_FILE = showInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kl.ForKama.showInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6B1FE3661DB3CA470005F579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = showInfo/showInfo.entitlements;
+				DEVELOPMENT_TEAM = 9MTLC2PZJ9;
+				INFOPLIST_FILE = showInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kl.ForKama.showInfo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6B88C3361D62FC2C00C91F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B88C3371D62FC2C00C91F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B88C3391D62FC2C00C91F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E09FEF78C2F621C4D481A5 /* Pods-ForKama.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ForKama/ForKama.entitlements;
+				DEVELOPMENT_TEAM = 9MTLC2PZJ9;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = ForKama/PrefixHeader.pch;
+				INFOPLIST_FILE = ForKama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kl.ForKama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B88C33A1D62FC2C00C91F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45691387B329F6924D88E1DB /* Pods-ForKama.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ForKama/ForKama.entitlements;
+				DEVELOPMENT_TEAM = 9MTLC2PZJ9;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = ForKama/PrefixHeader.pch;
+				INFOPLIST_FILE = ForKama/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kl.ForKama;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6B88C33C1D62FC2C00C91F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16DEEC879F0B2857041F7175 /* Pods-ForKamaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9MTLC2PZJ9;
+				INFOPLIST_FILE = ForKamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kl.ForKamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForKama.app/ForKama";
+			};
+			name = Debug;
+		};
+		6B88C33D1D62FC2C00C91F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD40AD0BB66B0A1A6E7D6A0 /* Pods-ForKamaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9MTLC2PZJ9;
+				INFOPLIST_FILE = ForKamaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kl.ForKamaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ForKama.app/ForKama";
+			};
+			name = Release;
+		};
+		6B88C33F1D62FC2C00C91F55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9MTLC2PZJ9;
+				INFOPLIST_FILE = ForKamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kl.ForKamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ForKama;
+			};
+			name = Debug;
+		};
+		6B88C3401D62FC2C00C91F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 9MTLC2PZJ9;
+				INFOPLIST_FILE = ForKamaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kl.ForKamaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ForKama;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B1FE3671DB3CA480005F579 /* Build configuration list for PBXNativeTarget "showInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1FE3651DB3CA470005F579 /* Debug */,
+				6B1FE3661DB3CA470005F579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B88C3031D62FC2C00C91F55 /* Build configuration list for PBXProject "ForKama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B88C3361D62FC2C00C91F55 /* Debug */,
+				6B88C3371D62FC2C00C91F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B88C3381D62FC2C00C91F55 /* Build configuration list for PBXNativeTarget "ForKama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B88C3391D62FC2C00C91F55 /* Debug */,
+				6B88C33A1D62FC2C00C91F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B88C33B1D62FC2C00C91F55 /* Build configuration list for PBXNativeTarget "ForKamaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B88C33C1D62FC2C00C91F55 /* Debug */,
+				6B88C33D1D62FC2C00C91F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B88C33E1D62FC2C00C91F55 /* Build configuration list for PBXNativeTarget "ForKamaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B88C33F1D62FC2C00C91F55 /* Debug */,
+				6B88C3401D62FC2C00C91F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6B88C3171D62FC2C00C91F55 /* ForKama.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B88C3181D62FC2C00C91F55 /* ForKama.xcdatamodel */,
+			);
+			currentVersion = 6B88C3181D62FC2C00C91F55 /* ForKama.xcdatamodel */;
+			path = ForKama.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6B88C3001D62FC2C00C91F55 /* Project object */;
+}
