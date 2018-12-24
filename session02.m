@@ -4,7 +4,7 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
     
-    NSDictionary *parameters = @{@"key": @"cVnL7OP67Tou1enfRxrXxSHl9cH2WJQAq5hPvrqbIyBz5IxjG9FStDNw45XIUM03",
+    NSDictionary *parameters = @{
                                  @"type": @"ios",
                                  @"log": [_logMessage getMessageDescription]
                                  };
